@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <>
       <Header />
 
-      <main className="min-h-[calc(100vh-65px)]">
+      <main>
         <Component {...pageProps} />
       </main>
 

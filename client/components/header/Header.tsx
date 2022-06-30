@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { Anchor } from "../anchor/Anchor";
-import { BtnSecondary } from "../buttons/BtnSecondary";
+import { ButtonSecondary } from "../buttons/ButtonSecondary";
 import { CONST_PAGES } from "../constants/pages";
 import { PageWidthWrapper } from "../page-width-wrapper/PageWidthWrapper";
 
@@ -42,11 +42,11 @@ export const Header = () => {
             </Anchor>
 
             <Anchor href={CONST_PAGES.signup.pathname}>
-              <BtnSecondary
+              <ButtonSecondary
                 isActive={router.pathname === CONST_PAGES.signup.pathname}
               >
                 Sign up
-              </BtnSecondary>
+              </ButtonSecondary>
             </Anchor>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, ButtonHTMLAttributes } from "react";
 
-interface IBtnSecondary
+interface IButtonSecondary
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
@@ -8,15 +8,16 @@ interface IBtnSecondary
   isActive?: boolean;
 }
 
-export const BtnSecondary = ({
+export const ButtonSecondary = ({
   className = "",
   isActive = false,
   children,
   ...props
-}: IBtnSecondary) => (
+}: IButtonSecondary) => (
   <button
     className={`
-      btn-secondary px-4 py-1.5 rounded border hover:border-gray-900
+      px-4 py-2 rounded border border-primary
+      outline-none hover:ring-2 focus:ring-2
       ${isActive ? "border-gray-900 font-semibold" : ""}
       ${className}
     `}

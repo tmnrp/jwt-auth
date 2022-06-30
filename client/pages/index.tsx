@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { PageWrapper } from "../components/page-wrapper/PageWrapper";
 import { PageWidthWrapper } from "../components/page-width-wrapper/PageWidthWrapper";
 
 //
@@ -13,7 +14,9 @@ const Home: NextPage = () => {
       </Head>
 
       <PageWidthWrapper>
-        <div>Landing page</div>
+        <PageWrapper>
+          <div>Landing page</div>
+        </PageWrapper>
       </PageWidthWrapper>
     </>
   );
