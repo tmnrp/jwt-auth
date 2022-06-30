@@ -11,11 +11,11 @@ export const Header = () => {
   //
   return (
     <header
-      className="
+      className={`
         h-[65px] sticky top-0 z-10
         border-b border-gray-200
         backdrop-blur-sm flex items-center
-      "
+      `}
     >
       <PageWidthWrapper>
         <div className="flex justify-between">
@@ -23,7 +23,7 @@ export const Header = () => {
             href="/"
             className="text-black tracking-widest uppercase font-extrabold text-xl"
           >
-            <div>T.M.</div>
+            <span>T.M.</span>
           </Anchor>
 
           <div className="space-x-5">
